@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1323;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    flex-direction: row;
+  }
+}
+
+.firstSection {
+  background-color: #1c204b;
+  border-radius: 30px;
+}
+
+#firstSectionUp {
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  gap: 30px;
+  background-color: #5747ea;
+  padding: 30px 30px;
+  border-radius: 30px;
+  height: 65%;
+}
+
+@media screen and (min-width: 700px) {
+  #firstSectionUp {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #firstSectionUp {
+    flex-direction: column;
+    width: 350px;
+  }
+}
+
+#profilePicture {
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#report {
+  padding: 20px 0px;
+  color: #bbc0ff;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#name {
+  font-weight: 300;
+  color: white;
+  font-size: 2.5rem;
+}
+
+#events {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  justify-content: space-evenly;
+  gap: 30px;
+  color: #7078c9;
+  padding: 30px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  #events {
+    grid-template-columns: repeat(1, 70px);
+    justify-content: left;
+  }
+}
+
+#events p:hover {
+  color: white;
+}
+#events p:active {
+  color: white;
+  background-color: #fff;
+}
+
+/* Left side styling */
+.secondSection {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .secondSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondSection {
+    grid-template-columns: repeat(3, 350px);
+  }
+}
+#orangeBg {
+  background-color: rgb(255, 140, 102);
+}
+.outerBgAll {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 90% 2%;
+}
+
+.innerBg {
+  background-color: #1c204b;
+  margin-top: 45px;
+  border-radius: 10px;
+}
+
+.innerBg:hover {
+  background-color: #33397a;
+  cursor: pointer;
+}
+
+.innerBgHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.innerBgMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+  padding: 0px 30px 50px 30px;
+  margin-top: 30px;
+  color: #bbc0ff;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .innerBgMain {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.innerBgMainTime {
+  color: #fff;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+#lightBg {
+  background-color: rgb(86, 194, 230);
+}
+#pinkBg {
+  background-color: rgb(255, 92, 124);
+}
+#greenBg {
+  background-color: rgb(74, 207, 129);
+}
+#purpleBg {
+  background-color: rgb(148, 106, 210);
+}
+#yellowBg {
+  background-color: rgb(241, 198, 91);
+}
